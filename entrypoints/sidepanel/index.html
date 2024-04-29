@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title><% VITE_APP_TITLE /></title>
+
+	<meta
+			name="manifest.default_icon"
+			content="{
+        '16': '/icon-16.png',
+        '24': '/icon-24.png',
+      }"
+	/>
+	<meta name="manifest.open_at_install" content="true"/>
+	<meta name="manifest.browser_style" content="true"/>
+	<!-- Set include/exclude if the page should be removed from some builds -->
+	<meta name="manifest.include" content="['chrome', 'firefox']"/>
+</head>
+<body>
+<!-- ... -->
+
+<div id="root"></div>
+<script type="module" src="./main.tsx"></script>
+</body>
+</html>
